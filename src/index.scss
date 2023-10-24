@@ -19,11 +19,14 @@ button {
   border-radius: 30px;
   color: #ffff;
   background-color: #1d9bf0;
+  cursor: pointer;
 }
 
 .p-btn {
-  height: 3rem;
-  width: 8rem;
+  height: 34px;
+  width: 73px;
+  
+  font-size: 15px bold;
 }
 .card {
   border-radius: 16px;
@@ -42,9 +45,8 @@ button {
       color: antiquewhite;
     }
     .left-items {
-    
-        cursor: pointer;
-      
+      cursor: pointer;
+
       color: #666b70;
     }
   }

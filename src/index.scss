@@ -38,7 +38,7 @@ button:hover {
   border-radius: 16px;
   margin: 8px;
   display: flex;
-  width: 440px;
+  width: 80%;
   background-color: #16181c;
   flex-direction: column;
   .card-item {
@@ -64,6 +64,8 @@ button:hover {
 }
 header {
   display: flex;
+  position: sticky;
+  top: 0;
   flex-direction: column;
   padding: 20px;
   width: 20%;
@@ -103,13 +105,32 @@ header {
 main {
   width: 80%;
   display: flex;
+  .right-side {
+    input{
+      margin: 20px 5px;
+    }
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
   .publication {
     width: 70%;
     border: 1px solid #2f3336;
     color: #ffff;
   }
-  nav{
+  nav {
     display: flex;
-    
+    position: sticky;
+    top: 0;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid #2f3336;
+    height: 10%;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+
+    li {
+      cursor: pointer;
+    }
   }
 }

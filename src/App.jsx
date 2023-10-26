@@ -17,7 +17,10 @@ function App() {
           a accusantium, earum ipsa magnam provident similique iure aliquid
           neque cupiditate.
         </div>
+        <div className="right-side">
+          <input type="search" />
         <Trending />
+        </div>
       </main>
     </>
   );

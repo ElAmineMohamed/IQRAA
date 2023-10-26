@@ -7,6 +7,9 @@
 html {
   background-color: rgb(0, 0, 0);
 }
+#root {
+  display: flex;
+}
 .container {
   display: flex;
   align-items: center;
@@ -21,6 +24,9 @@ button {
   background-color: #1d9bf0;
   cursor: pointer;
 }
+button:hover {
+  background-color: rgb(29, 134, 240);
+}
 
 .p-btn {
   height: 34px;
@@ -30,6 +36,7 @@ button {
 }
 .card {
   border-radius: 16px;
+  margin: 8px;
   display: flex;
   width: 440px;
   background-color: #16181c;
@@ -55,20 +62,17 @@ button {
 .card-item:hover {
   background-color: rgba(73, 73, 73, 0.2);
 }
-header{
+header {
   display: flex;
   flex-direction: column;
   padding: 20px;
   width: 20%;
   height: 100vh;
-  .icon{
-    :hover{
-      background-color: rgba(102, 107, 112,0.2);
-    }
-    .logo{
+  .icon {
+    .logo {
       font-size: 30px;
     }
-    li{
+    li {
       display: flex;
       align-items: center;
       justify-content: space-around;
@@ -77,7 +81,6 @@ header{
       height: 50px;
       border-radius: 30px;
       cursor: pointer;
-      
     }
     height: 70vh;
     display: flex;
@@ -87,10 +90,26 @@ header{
     color: #ffff;
     font-size: 18;
   }
-  .Profile{
+  .Profile {
     align-items: center;
     display: flex;
     height: 3vh;
     color: #ffff;
+  }
+}
+.icon li:hover {
+  background-color: rgba(102, 107, 112, 0.2);
+}
+main {
+  width: 80%;
+  display: flex;
+  .publication {
+    width: 70%;
+    border: 1px solid #2f3336;
+    color: #ffff;
+  }
+  nav{
+    display: flex;
+    
   }
 }

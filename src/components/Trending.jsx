@@ -1,7 +1,6 @@
 export default function Card() {
   return (
     <>
-      <div className="container">
         <div className="card">
           <div className="card-item">
             <div className="left-items">
@@ -20,7 +19,6 @@ export default function Card() {
             </div>
           </div>
         </div>
-      </div>
     </>
   );
 }

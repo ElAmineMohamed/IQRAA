@@ -1,21 +1,24 @@
 import "./App.scss";
-import { FaPuzzlePiece ,FaBook,FaCircleInfo,FaBell,FaHouseChimney } from "react-icons/fa6";
+import SideBar from "./components/SideBar";
+import Trending from "./components/Trending";
+
 function App() {
   return (
     <>
-      <header>
-        <div className="icon">
-          <div className="logo">logo</div>
-            <li> <FaHouseChimney size="40px" /><span>home</span></li>
-            <li><FaPuzzlePiece size="40px" />puzzel</li>
-            <li><FaBook size="40px"/> Book</li>
-            <li><FaBell size="40px"/> Book</li>
-            <li><FaCircleInfo size="40px"/>About</li>
-            <button className="p-btn">public</button>
+      <SideBar />
+      <main>
+        <div className="publication">
+          <nav>
+            <li>For You</li>
+            <li>Following</li>
+          </nav>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae in
+          quaerat consequuntur. Fugit eos architecto in qui reiciendis corrupti
+          a accusantium, earum ipsa magnam provident similique iure aliquid
+          neque cupiditate.
         </div>
-        <div className="Profile">Profile</div>
-      </header>
-      <main></main>
+        <Trending />
+      </main>
     </>
   );
 }

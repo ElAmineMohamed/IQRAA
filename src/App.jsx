@@ -1,4 +1,5 @@
 import "./App.scss";
+import Card from "./components/Card";
 import SideBar from "./components/SideBar";
 import Trending from "./components/Trending";
 
@@ -12,14 +13,23 @@ function App() {
             <li>For You</li>
             <li>Following</li>
           </nav>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae in
-          quaerat consequuntur. Fugit eos architecto in qui reiciendis corrupti
-          a accusantium, earum ipsa magnam provident similique iure aliquid
-          neque cupiditate.
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
         </div>
         <div className="right-side">
           <input type="search" />
-        <Trending />
+          <Trending />
         </div>
       </main>
     </>

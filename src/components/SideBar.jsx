@@ -10,7 +10,7 @@ export default function SideBar() {
   return (
     <header>
     <div className="icon">
-      <div className="logo">logo</div>
+      <div className="logo">IQRAA</div>
       <li>
         <FaHouseChimney size="40px" />
         <span>home</span>

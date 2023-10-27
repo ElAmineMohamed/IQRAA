@@ -1,3 +1,5 @@
+import { useState } from "react";
+import img2 from "../assets/profile-picture.jpeg";
 import img1 from "../assets/photo-1575936123452-b67c3203c357.jpeg";
 import {
   BsArrowUpCircle,
@@ -7,15 +9,27 @@ import {
 } from "react-icons/bs";
 
 export default function Card() {
+  const [up, setUp] = useState(false);
+  const [down, setDown] = useState(false);
+  const [fav, setFav] = useState(false);
+  const handelUp = () => {
+    setUp(!up);
+  };
+  const handelDown = () => {
+    setDown(!down);
+  };
+  const handelFav = () => {
+    setFav(!fav);
+  };
   return (
     <div className="p-Card">
       <div className="name">
         <div className="name-img">
-          <img src="" alt="" />
-          <h1></h1>
+          <img src={img2} alt="" />
+          <p>Amine</p>
         </div>
         <div className="role-time">
-          <p>sdfgasgfdasfdgh</p>
+          <p>school</p>
         </div>
       </div>
       <div className="status">
@@ -27,16 +41,31 @@ export default function Card() {
       </div>
       <div className="p-img">
         <img src={img1} />
+        <img src={img1} />
       </div>
       <div className="publication-items">
         <li>
-          <BsArrowUpCircle size="22px" /> <span>10</span>
+          <BsArrowUpCircle
+            size="22px"
+            color={up ? "#1d9bf0" : "#ffff"}
+            onClick={handelUp}
+          />
+          <span>10</span>
         </li>
         <li>
-          <BsArrowDownCircle size="22px" /> <span>5</span>
+          <BsArrowDownCircle
+            size="22px"
+            color={down ? "#1d9bf0" : "#ffff"}
+            onClick={handelDown}
+          />{" "}
+          <span>5</span>
         </li>
         <li>
-          <BsBookmarkCheck size="22px" />
+          <BsBookmarkCheck
+            size="22px"
+            color={fav ? "#1d9bf0" : "#ffff"}
+            onClick={handelFav}
+          />
         </li>
         <li>
           <BsFillExclamationCircleFill size="22px" />

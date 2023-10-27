@@ -143,25 +143,57 @@ main {
   align-items: center;
   width: 100%;
   border: 1px solid #2f3336;
-  .name{
+  .status{
+    margin: 10px;
+    padding: 2px;
+  }
+  .name {
     display: flex;
     align-items: center;
     width: 100%;
+   .role-time{
+    color: rgb(155, 155, 155);
+  }
+  .name-img {
+    width: 20%;
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    :hover{
+      text-decoration: underline;
+    }
+    img {
+        margin-right: 10px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        overflow: hidden;
+      }
+      p {
+        font-weight: bold;
+      }
+    }
   }
   .publication-items {
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: space-around;
+    li {
+      cursor: pointer;
+    }
   }
   .p-img {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     width: 90%;
     border-radius: 30px;
     border: 1px solid #2f3336;
     img {
+      margin: 4px;
       width: 80%;
       height: 80%;
       overflow: hidden;
